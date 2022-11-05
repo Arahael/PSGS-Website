@@ -1,0 +1,211 @@
+<html lang="PL">
+<head>
+	<meta charset="utf-8">
+	<title>Grupa PSGS - akta operatorów</title>
+	<link rel="stylesheet" type="text/css" href="szaty.css">
+	<script src="https://code.jquery.com/jquery-2.1.3.min.js"></script>
+	<script type="text/javascript" src="cycler.js"></script>
+	<script>
+  	/**
+  * @param {String} url - address for the HTML to fetch
+  * @return {String} the resulting HTML string fragment
+  */
+async function fetchHtmlAsText(url) {
+    return await (await fetch(url)).text();
+}
+
+// funkcja ładująca akta operatora
+async function load_operatorzy(liczba) {
+	var numer = liczba;
+    const contentDiv = document.getElementById("aktabody");
+    contentDiv.innerHTML = await fetchHtmlAsText('operatorzy/operator'+numer+'.html');
+}
+	</script>
+</head>
+<body>
+
+
+<div class="background-image toggle-image first-image show"></div>
+<div class="background-image toggle-image second-image"></div>
+<div class="background-image toggle-image third-image"></div>
+<div class="background-image toggle-image fourth-image"></div>
+<div class="background-image toggle-image fifth-image"></div>
+<div class="background-image toggle-image sixth-image"></div>
+<div class="background-image toggle-image seventh-image"></div>
+<div class="background-image toggle-image eighth-image"></div>
+
+	<div id="caly">
+
+		<div id="teksty">
+			<div id="lewy">
+				<div id="logo">
+					<a href="index.html" class="fill-div"></a>
+				</div>
+				<!-- Tu wklepujemy teksta co chcemy po lewej-->
+				<br/>
+				<div id="twarzoksiazkadiv">
+					<div>
+						<img id="profilowefotka" src="akta/Ahmed.jpg" onclick="load_operatorzy(1)" title="Ahmed">
+					</div>
+					<div>
+						<img id="profilowefotka" src="akta/SarsVonUnicorn.jpg" onclick="load_operatorzy(2)" title="SarsVonUnicorn">
+					</div>
+					<div>
+						<img id="profilowefotka" src="akta/Kolczyfelek.jpg" onclick="load_operatorzy(3)" title="Kolczyfelek">
+					</div>
+					<div>
+						<img id="profilowefotka" src="akta/Flopa.jpg" onclick="load_operatorzy(4)" title="Flopa">
+					</div>
+					<div>
+						<img id="profilowefotka" src="akta/Kinkow.jpg" onclick="load_operatorzy(5)" title="Kinkow">
+					</div>
+					<div>
+						<img id="profilowefotka" src="akta/tester.jpg" onclick="load_operatorzy(6)" title="operator1">
+					</div>
+					<div>
+						<img id="profilowefotka" src="akta/tester.jpg" onclick="load_operatorzy(7)" title="operator1">
+					</div>
+					<div>
+						<img id="profilowefotka" src="akta/tester.jpg" onclick="load_operatorzy(8)" title="operator1">
+					</div>
+					<div>
+						<img id="profilowefotka" src="akta/tester.jpg" onclick="load_operatorzy(9)" title="operator1">
+					</div>
+					<div>
+						<img id="profilowefotka" src="akta/tester.jpg" onclick="load_operatorzy(10)" title="operator1">
+					</div>
+					<div>
+						<img id="profilowefotka" src="akta/tester.jpg" onclick="load_operatorzy(11)" title="operator1">
+					</div>
+					<div>
+						<img id="profilowefotka" src="akta/tester.jpg" onclick="load_operatorzy(12)" title="operator1">
+					</div>
+					<div>
+						<img id="profilowefotka" src="akta/tester.jpg" onclick="load_operatorzy(13)" title="operator1">
+					</div>
+					<div>
+						<img id="profilowefotka" src="akta/tester.jpg" onclick="load_operatorzy(14)" title="operator1">
+					</div>
+					<div>
+						<img id="profilowefotka" src="akta/tester.jpg" onclick="load_operatorzy(15)" title="operator1">
+					</div>
+					<div>
+						<img id="profilowefotka" src="akta/tester.jpg" onclick="load_operatorzy(16)" title="operator1">
+					</div>
+					<div>
+						<img id="profilowefotka" src="akta/tester.jpg" onclick="load_operatorzy(17)" title="operator1">
+					</div>
+					<div>
+						<img id="profilowefotka" src="akta/tester.jpg" onclick="load_operatorzy(18)" title="operator1">
+					</div>
+					<div>
+						<img id="profilowefotka" src="akta/tester.jpg" onclick="load_operatorzy(19)" title="operator1">
+					</div>
+					<div>
+						<img id="profilowefotka" src="akta/tester.jpg" onclick="load_operatorzy(20)" title="operator1">
+					</div>
+					<div>
+						<img id="profilowefotka" src="akta/tester.jpg" onclick="load_operatorzy(21)" title="operator1">
+					</div>
+					<div>
+						<img id="profilowefotka" src="akta/tester.jpg" onclick="load_operatorzy(22)" title="operator1">
+					</div>
+					<div>
+						<img id="profilowefotka" src="akta/tester.jpg" onclick="load_operatorzy(23)" title="operator1">
+					</div>
+					<div>
+						<img id="profilowefotka" src="akta/tester.jpg" onclick="load_operatorzy(24)" title="operator1">
+					</div>
+					<div>
+						<img id="profilowefotka" src="akta/tester.jpg" onclick="load_operatorzy(25)" title="operator1">
+					</div>
+					<div>
+						<img id="profilowefotka" src="akta/tester.jpg" onclick="load_operatorzy(26)" title="operator1">
+					</div>
+					<div>
+						<img id="profilowefotka" src="akta/tester.jpg" onclick="load_operatorzy(27)" title="operator1">
+					</div>
+					<div>
+						<img id="profilowefotka" src="akta/tester.jpg" onclick="load_operatorzy(28)" title="operator1">
+					</div>
+					<div>
+						<img id="profilowefotka" src="akta/tester.jpg" onclick="load_operatorzy(29)" title="operator1">
+					</div>
+					<div>
+						<img id="profilowefotka" src="akta/tester.jpg" onclick="load_operatorzy(30)" title="operator1">
+					</div>
+					<div>
+						<img id="profilowefotka" src="akta/tester.jpg" onclick="load_operatorzy(31)" title="operator1">
+					</div>
+					<div>
+						<img id="profilowefotka" src="akta/tester.jpg" onclick="load_operatorzy(32)" title="operator1">
+					</div>
+					<div>
+						<img id="profilowefotka" src="akta/tester.jpg" onclick="load_operatorzy(33)" title="operator1">
+					</div>
+					<div>
+						<img id="profilowefotka" src="akta/tester.jpg" onclick="load_operatorzy(34)" title="operator1">
+					</div>
+					<div>
+						<img id="profilowefotka" src="akta/tester.jpg" onclick="load_operatorzy(35)" title="operator1">
+					</div>
+					<div>
+						<img id="profilowefotka" src="akta/tester.jpg" onclick="load_operatorzy(36)" title="operator1">
+					</div>
+					<div>
+						<img id="profilowefotka" src="akta/tester.jpg" onclick="load_operatorzy(37)" title="operator1">
+					</div>
+					<div>
+						<img id="profilowefotka" src="akta/tester.jpg" onclick="load_operatorzy(38)" title="operator1">
+					</div>
+					<div>
+						<img id="profilowefotka" src="akta/tester.jpg" onclick="load_operatorzy(39)" title="operator1">
+					</div>
+					<div>
+						<img id="profilowefotka" src="akta/tester.jpg" onclick="load_operatorzy(40)" title="operator1">
+					</div>
+				</div>
+				<!-- O tu tam wyżej, między commentami -->
+			</div>
+			<div id="prawy">
+				<div id="menu">
+					<table>
+						<tr>
+							<th>
+								<a href="index.html">Strona główna</a>
+							</th>
+							<th>
+								<a href="rekrutacja.html">Rekrutacja</a>
+							</th>
+							<th>
+								<a href="akta.html">Akta</a>
+							</th>
+							<th id="sociale">
+					<a href="https://www.youtube.com/channel/UCbTQ6Gv8lmMldOrMxYxxKjw" id="face"><img src="logoYT.png"></a>
+							</th>
+							<th id="sociale">
+					<a href="https://www.facebook.com/Grupa-PSGS-106814258171429" id="face"><img src="facebook.png"></a>
+							</th>
+							<th id="sociale">
+					<a href="https://discord.gg/zdzKUrXVn3" id="face"><img src="logoDiscord.png"></a>
+							</th>
+						</tr>
+					</table>
+				</div>
+				<div>
+					<!-- Tu wklepujemy teksta co chcemy po prawej-->
+					<table id="aktabodymenu">
+					<tr>	
+					<th id="aktamenu"><a href="szkoleniowcy.html">Szkoleniowcy</a></th>
+					<th id="aktamenu"><a href="Operatorzy1.html">Operatorzy</a></th>
+					</tr>
+					</table>
+					<div id="aktabody">
+						
+					</div>				
+					<!-- O tu powyżej tego commenta -->
+				</div>
+			</div>
+		</div>
+	</div>
+</body>

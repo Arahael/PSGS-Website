@@ -1,0 +1,118 @@
+<html lang="PL">
+<head>
+	<meta charset="utf-8">
+	<title>Grupa PSGS - akta szkoleniowców</title>
+	<link rel="stylesheet" type="text/css" href="szaty.css">
+	<script src="https://code.jquery.com/jquery-2.1.3.min.js"></script>
+	<script type="text/javascript" src="cycler.js"></script>
+	<script>
+  	/**
+  * @param {String} url - address for the HTML to fetch
+  * @return {String} the resulting HTML string fragment
+  */
+async function fetchHtmlAsText(url) {
+    return await (await fetch(url)).text();
+}
+
+// funkcja ładująca akta operatora
+async function load_szkoleniowcy(liczba) {
+	var numer = liczba;
+    const contentDiv = document.getElementById("aktabody");
+    contentDiv.innerHTML = await fetchHtmlAsText('operatorzy/szkoleniowiec'+numer+'.html');
+}
+	</script>
+</head>
+<body>
+
+
+<div class="background-image toggle-image first-image show"></div>
+<div class="background-image toggle-image second-image"></div>
+<div class="background-image toggle-image third-image"></div>
+<div class="background-image toggle-image fourth-image"></div>
+<div class="background-image toggle-image fifth-image"></div>
+<div class="background-image toggle-image sixth-image"></div>
+<div class="background-image toggle-image seventh-image"></div>
+<div class="background-image toggle-image eighth-image"></div>
+
+	<div id="caly">
+
+		<div id="teksty">
+			<div id="lewy">
+				<div id="logo">
+					<a href="index.html" class="fill-div"></a>
+				</div>
+				<!-- Tu wklepujemy teksta co chcemy po lewej-->
+				<br/>
+				<div id="twarzoksiazkadiv">
+					<div>
+						<img id="profilowefotka" src="akta/Ari.jpg" onclick="load_szkoleniowcy(1)" title="Ari">
+					</div>
+					<div>
+						<img id="profilowefotka" src="akta/CplMac.jpg" onclick="load_szkoleniowcy(2)" title="Cpl Mac">
+					</div>
+					<div>
+						<img id="profilowefotka" src="akta/Tornado.jpg" onclick="load_szkoleniowcy(3)" title="Tornado_Wicher">
+					</div>
+					<div>
+						<img id="profilowefotka" src="akta/Szczupawka.jpg" onclick="load_szkoleniowcy(4)" title="Szczupawka">
+					</div>
+					<div>
+						<img id="profilowefotka" src="akta/tester.jpg" onclick="load_szkoleniowcy(5)" title="operator1">
+					</div>
+					<div>
+						<img id="profilowefotka" src="akta/tester.jpg" onclick="load_szkoleniowcy(6)" title="operator1">
+					</div>
+					<div>
+						<img id="profilowefotka" src="akta/tester.jpg" onclick="load_szkoleniowcy(7)" title="operator1">
+					</div>
+					<div>
+						<img id="profilowefotka" src="akta/tester.jpg" onclick="load_szkoleniowcy(8)" title="operator1">
+					</div>
+					<div>
+						<img id="profilowefotka" src="akta/tester.jpg" onclick="load_szkoleniowcy(9)" title="operator1">
+					</div>
+				</div>
+				<!-- O tu tam wyżej, między commentami -->
+			</div>
+			<div id="prawy">
+				<div id="menu">
+					<table>
+						<tr>
+							<th>
+								<a href="index.html">Strona główna</a>
+							</th>
+							<th>
+								<a href="rekrutacja.html">Rekrutacja</a>
+							</th>
+							<th>
+								<a href="akta.html">Akta</a>
+							</th>
+							<th id="sociale">
+					<a href="https://www.youtube.com/channel/UCbTQ6Gv8lmMldOrMxYxxKjw" id="face"><img src="logoYT.png"></a>
+							</th>
+							<th id="sociale">
+					<a href="https://www.facebook.com/Grupa-PSGS-106814258171429" id="face"><img src="facebook.png"></a>
+							</th>
+							<th id="sociale">
+					<a href="https://discord.gg/zdzKUrXVn3" id="face"><img src="logoDiscord.png"></a>
+							</th>
+						</tr>
+					</table>
+				</div>
+				<div>
+					<!-- Tu wklepujemy teksta co chcemy po prawej-->
+					<table id="aktabodymenu">
+					<tr>	
+					<th id="aktamenu"><a href="szkoleniowcy.html">Szkoleniowcy</a></th>
+					<th id="aktamenu"><a href="Operatorzy1.html">Operatorzy</a></th>
+					</tr>
+					</table>
+					<div id="aktabody">
+						
+					</div>				
+					<!-- O tu powyżej tego commenta -->
+				</div>
+			</div>
+		</div>
+	</div>
+</body>

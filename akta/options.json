@@ -1,0 +1,22 @@
+{
+  "dataPath": "/var/www/foundry/foundrydata",
+  "compressStatic": true,
+  "fullscreen": false,
+  "hostname": foundry.cplmac.com,
+  "language": "en.core",
+  "localHostname": null,
+  "port": 30000,
+  "protocol": null,
+  "proxyPort": 443,
+  "proxySSL": true,
+  "routePrefix": null,
+  "updateChannel": "stable",
+  "upnp": true,
+  "upnpLeaseDuration": null,
+  "awsConfig": null,
+  "passwordSalt": null,
+  "sslCert": null,
+  "sslKey": null,
+  "world": null,
+  "serviceConfig": null
+}

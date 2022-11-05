@@ -1,0 +1,279 @@
+body
+{
+	margin: 0px;
+	border: solid;
+	border-color: rgba(0,0,0,0.5);
+	border-width: 10px;
+	color: white;
+	font-family: 'Open Sans', Arial, sans-serif;
+	font-size: 17px;
+}
+div
+{
+	margin: 0px;
+}
+
+a
+{
+    transition: all 0.3s ease;
+    text-decoration: none;	
+    color: white;
+    font-size: 30px;
+}
+a:hover 
+{ 
+	text-decoration: none; 
+	color: #CCCCCC;
+}
+
+button:focus 
+{ 
+	outline: none;
+	color: white; 
+}
+
+
+tr
+{
+	width: 100%;
+}
+
+th
+{
+	width:33%;
+}
+
+li
+{
+	padding-top: 3px;
+}
+
+iframe
+{	
+    display: block;
+    height: 35%;
+    width: 70%;
+    padding-bottom: 20%;
+    padding-top: 45%;
+    margin: 0 auto;
+    border: 0;
+}
+
+#aktabodymenu
+{
+	width: 100%;
+}
+
+#aktamenu
+{
+	width: 32%;
+}
+
+#aktabody
+{
+	margin-left: 3%;
+	margin-right: 3%;
+}
+
+#twarzoksiazkadiv
+{
+	width: 100%;
+	max-width: 650px;
+	height: 100%;
+	max-height: 650px;
+	display: grid;
+	border-style: solid;
+	border-width: 10px;
+	border-color: transparent;
+	overflow-y: scroll;
+	-ms-overflow-style:  none;
+	scrollbar-width:  none;
+    grid-gap: 0.5rem;
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+}
+
+#twarzoksiazkadiv::-webkit-scrollbar
+{
+	display: none;
+}
+
+#profilowefotka
+{
+	max-width: 120px;
+	max-height: 120px;
+	width: auto;
+	height: auto;
+	object-fit: cover;
+}
+
+
+#sociale
+{
+	padding-left: 5px;
+}
+
+#disc
+{
+	width: 300px;
+	height: 102px;
+	border-radius: 25px;
+}
+
+#logo
+{
+	width: 200px;
+	height: 193px;
+	background-image: url('logoPSGS.png');
+}
+
+a.fill-div {
+    display: block;
+    height: 100%;
+    width: 100%;
+    text-decoration: none;
+}
+
+#caly {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    margin: 0px;
+}
+
+#face
+{
+	float: right;
+}
+
+#lewy
+{
+	width: 40%;
+	height: 100%;
+	float: left;
+}
+
+#prawy
+{
+	width: 60%;
+	height: 100%;
+	float: right;
+	background-color: rgba(0,0,0,0.5);
+}
+
+#menu
+{
+
+}
+
+#prawyZawartosc
+{
+	margin-top: 20%;
+	margin-left: 10%;
+	margin-right: 10%;
+}
+
+#stopka
+{
+	width: 100%;
+	height: 10%
+	background-color: ;
+}
+/*CANT TOUCH THIS, GONNA BOOM BOOM THY CYCLING PICTURE TING*/
+
+/* Basic background image styling. */
+.background-image {
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+/* Styles for the alternating / transition effect. */
+.toggle-image {
+ 	position: absolute;
+	width: 100%;
+	top: 0;
+	left: 0;
+ 	height: 100%;
+	transition: opacity 1s ease-in-out;
+}
+
+/* Styles for the specific images. */
+.first-image {
+	background-image: url('tla/backIMG1.jpg');	
+	z-index: -20;
+	opacity: 0;
+}
+
+.second-image {
+	background-image: url('tla/backIMG2.jpg');
+	z-index: -19;
+	opacity: 0;
+}
+
+.third-image {
+	background-image: url('tla/backIMG3.jpg');
+	z-index: -18;
+	opacity: 0;
+}
+.fourth-image {
+	background-image: url('tla/backIMG4.jpg');
+	z-index: -17;
+	opacity: 0;
+}
+
+.fifth-image {
+	background-image: url('tla/backIMG5.jpg');
+	z-index: -16;
+	opacity: 0;
+}
+
+.sixth-image {
+	background-image: url('tla/backIMG6.jpg');
+	z-index: -16;
+	opacity: 0;
+}
+
+.seventh-image {
+	background-image: url('tla/backIMG7.jpg');
+	z-index: -16;
+	opacity: 0;
+}
+
+.eighth-image {
+	background-image: url('tla/backIMG8.jpg');
+	z-index: -16;
+	opacity: 0;
+}
+
+.first-image.show {
+	opacity: 1;
+}
+
+.second-image.show {
+	opacity: 1;
+}
+
+.third-image.show {
+	opacity: 1;
+}
+
+.fourth-image.show {
+	opacity: 1;
+}
+
+.fifth-image.show {
+	opacity: 1;
+}
+
+.sixth-image.show {
+	opacity: 1;
+}
+
+.seventh-image.show {
+	opacity: 1;
+}
+
+.eighth-image.show {
+	opacity: 1;
+}
+
